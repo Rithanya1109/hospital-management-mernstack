@@ -1,0 +1,212 @@
+/* ContactPage.css */
+
+.contact-root {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    width: 100px;
+    height: 70px;
+    border-radius: 50px;
+    margin-right: 15px;
+  }
+  
+  .navbar-title {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    color: #3dbbd4;
+    font-size: 1.2rem;
+  }
+  
+  .sub-title {
+    color: #777;
+    font-size: 0.8rem;
+  }
+  
+  .hero-section {
+    margin-top: 40px;
+  }
+  
+  .hero-card {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .product-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+  }
+  
+  .product-details {
+    flex: 1;
+  }
+  
+  /* Footer Styles */
+  #footer {
+    background-color: #194767;
+   
+  }
+.footer {
+  background-color: #fefeff; /* Keep the existing background color */
+  padding: 10px 5px; /* Further reduced padding */
+  margin-top: 20px; /* Reduced margin */
+}
+
+.contact-wrap {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  justify-content: space-between;
+  gap: 10px; /* Reduced spacing between sections */
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-in {
+  flex: 1 1 45%; /* Take 45% width on larger screens */
+  min-width: 300px; /* Minimum width for smaller screens */
+  padding: 5px; /* Further reduced padding */
+}
+
+.contact-in h1 {
+  font-size: 1.2rem; /* Reduced font size */
+  margin-bottom: 5px; /* Reduced margin */
+  color: #3dbbd4;
+}
+
+.contact-in h2 {
+  font-size: 1rem; /* Reduced font size */
+  margin: 5px 0 3px; /* Reduced margin */
+}
+
+.contact-in p {
+  font-size: 0.9rem; /* Reduced font size */
+  margin: 3px 0; /* Reduced margin */
+}
+
+.contact-in form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-in-input,
+.contact-in-textarea {
+  width: 100%;
+  padding: 6px; /* Further reduced padding */
+  margin: 6px 0; /* Reduced margin */
+  border: 1px solid #ccc;
+  color: #051c4e;
+  border-radius: 5px;
+  font-size: 0.9rem; /* Reduced font size */
+}
+
+.contact-in-btn {
+  background-color: #3dbbd4;
+  color: #fff;
+  border: none;
+  padding: 6px 12px; /* Further reduced padding */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem; /* Reduced font size */
+}
+
+.contact-in-btn:hover {
+  background-color: #3399cc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-wrap {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+  }
+
+  .contact-in {
+    flex: 1 1 100%; /* Take full width on smaller screens */
+    text-align: center; /* Center-align text */
+  }
+
+  .contact-in form {
+    align-items: center; /* Center-align form elements */
+  }
+
+  .contact-in-input,
+  .contact-in-textarea {
+    max-width: 90%; /* Limit input width on smaller screens */
+  }
+
+  .contact-in-btn {
+    max-width: 50%; /* Limit button width on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-in h1 {
+    font-size: 1rem; /* Further reduced heading size */
+  }
+
+  .contact-in h2 {
+    font-size: 0.85rem; /* Further reduced subheading size */
+  }
+
+  .contact-in p {
+    font-size: 0.8rem; /* Further reduced paragraph size */
+  }
+
+  .contact-in-btn {
+    max-width: 70%; /* Adjust button width for very small screens */
+  }
+}
+
+
+/* Snackbar Styles */
+.snackbar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3dbbd4;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  z-index: 1000;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+/* Snackbar Animation */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+}
+

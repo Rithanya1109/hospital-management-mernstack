@@ -1,0 +1,42 @@
+.gallery-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-title {
+    text-align: center;
+    color: #3dbbd4;
+    margin-bottom: 30px;
+  }
+  
+  .gallery-section {
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .gallery-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px; /* Add margin to space out the cards */
+  }
+  
+  .gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallery-image {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .image-description {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+  }

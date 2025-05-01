@@ -1,0 +1,111 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../../assets/img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+} */
+
+/* Change text color for the menu */
+.menu {
+  color: #ffffff; /* Replace with your desired color */
+}
+
+.menu a {
+  color: #ffffff; /* Replace with your desired color */
+  text-decoration: none; /* Optional: Remove underline from links */
+}
+
+.menu a:hover {
+  color: #3dbbd4; /* Optional: Change color on hover */
+}
+
+.signs .auth-links a,
+.signs .appointment-link a {
+  color: #ffffff; /* Replace with your desired color */
+}
+
+.signs .auth-links a:hover,
+.signs .appointment-link a:hover {
+  color: #3dbbd4; /* Optional: Change color on hover */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.appointment-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.appointment-box h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #35a1b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #33a2b8;
+}
+
+#confirmation-message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: green;
+}
+
+::placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+
+select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23444" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px;
+}

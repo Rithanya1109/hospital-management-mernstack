@@ -1,0 +1,72 @@
+/* src/pages/SignIn/SignIn.css */
+
+/* General Styling */
+.signin-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../assets/img/hero.jpg'); /* Adjust path if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Container for Sign In Box */
+  .sign-in-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  /* Form Styling */
+  input[type="text"],
+  input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  /* Button Styling */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #35a1b6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #33a2b8;
+  }
+  
+  /* Error Message */
+  .error-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+  }
+  
+  /* Link Styling */
+  .forgot-password a,
+  .signup-text a {
+    color: #47b0c5;
+    text-decoration: none;
+  }
+  
